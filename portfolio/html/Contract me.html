@@ -6,10 +6,98 @@
     <title>Contract Me</title>
   </head>
   <body>
-    <h1>Contact Me</h1>
-    <p><strong>Phone Number:</strong> +8801712345678</p>
-    <p><strong>Email:</strong> <em>raselhossain11@gmail.com</em></p>
-    <p><a href="https://www.facebook.com/russel11h">Facebook Profile</a></p>
-    <p><a href="https://github.com/russel11h">GitHub Profile</a></p>
+    <!-- Registration Form with Table -->
+    <form method="post">
+      <fieldset>
+        <legend>Registration Form</legend>
+
+        <table>
+          <tr>
+            <td><label for="name">First Name:</label></td>
+            <td><input type="text" id="name" name="name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="name">Last Name:</label></td>
+            <td><input type="text" id="name" name="name" required /></td>
+          </tr>
+          <tr>
+            <td><label>Gender:</label></td>
+            <td>
+              <input type="radio" name="gender" value="male" />Male
+              <input type="radio" name="gender" value="female" />Female
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td><label>Reason Of Contract</label></td>
+            <td>
+              <input
+                type="radio"
+                name="Reason Of Contract"
+                value="Projects"
+              />Projects
+              <input
+                type="radio"
+                name="Reason Of Contract"
+                value="Thesis"
+              />Thesis
+              <input type="radio" name="Reason Of Contract" value="Job" />Job
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Topics:</label></td>
+            <td>
+              <input type="checkbox" value="Web Development" required /> Web
+              Development
+              <input type="checkbox" value="Mobile Development" /> Mobile
+              Development
+              <input type="checkbox" value="AI/ML Development" /> AI/ML
+              Development
+            </td>
+          </tr>
+          <tr>
+            <td><label>Consultation date:</label></td>
+            <td>
+              <input type="date" id="start" name="Consultation-date" />
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Register" />
+              <input type="reset" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <br />
+    <a href="index.html">Back to Home</a>
+    <hr />
+
+    <p>
+      <a
+        href="C:\Users\rasel\Documents\Developer\wbt-spring-2025-2026\portfolio\html\Education.html"
+        >Education</a
+      >
+    </p>
+    <p>
+      <a
+        href="C:\Users\rasel\Documents\Developer\wbt-spring-2025-2026\portfolio\html\Experience.html"
+        >Experience</a
+      >
+    </p>
+    <p>
+      <a
+        href="C:\Users\rasel\Documents\Developer\wbt-spring-2025-2026\portfolio\html\Project.html"
+        >Project</a
+      >
+    </p>
   </body>
 </html>

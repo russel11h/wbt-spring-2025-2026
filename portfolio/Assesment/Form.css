@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  padding: 6px;
+  vertical-align: top;
+}
+
+.label {
+  text-align: right;
+  font-weight: bold;
+  width: 200px;
+}
+
+.star {
+  color: red;
+}
+
+input,
+select {
+  padding: 5px;
+  width: 200px;
+}
+
+.radio-group input {
+  width: auto;
+}
+
+.note {
+  font-size: smaller;
+  color: grey;
+}
+
+.small-input {
+  width: 100px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: auto;
+  padding: 5px 10px;
+  cursor: pointer;
+}

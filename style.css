@@ -1,0 +1,81 @@
+body {
+  background-color: lightblue;
+  font-family: Arial;
+  margin: 20px;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+
+h2 {
+  color: navy;
+  text-align: left;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+
+img {
+  border: 2px solid black;
+}
+
+table {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+td {
+  padding: 5px;
+}
+
+input {
+  margin: 5px;
+}
+
+ul {
+  color: darkgreen;
+}
+
+hr {
+  border: 1px solid gray;
+}
+
+.nav {
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav a {
+  margin: 10px;
+}
+
+.header {
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+}
+
+.footer {
+  background-color: lightgray;
+  text-align: center;
+  padding: 10px;
+}

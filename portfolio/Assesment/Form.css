@@ -1,10 +1,12 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', serif, sans-serif;
   background-color: white;
+  size-adjust: static;
 }
 
-h1 {
+h3 {
   text-align: left;
+  color: red;
 }
 
 table {
@@ -14,13 +16,19 @@ table {
 
 td {
   padding: 6px;
-  vertical-align: top;
+  vertical-align: center;
 }
 
 .label {
   text-align: right;
   font-weight: bold;
   width: 200px;
+}
+.labeltop {
+  text-align: right;
+  font-weight: bold;
+  width: 200px;
+  vertical-align: top;
 }
 
 .star {
@@ -35,6 +43,8 @@ select {
 
 .radio-group input {
   width: auto;
+
+
 }
 
 .note {
@@ -51,4 +61,9 @@ input[type="reset"] {
   width: auto;
   padding: 5px 10px;
   cursor: pointer;
+
+}
+input[type="checkbox"] {
+  width: auto;
+  align-content: left;
 }

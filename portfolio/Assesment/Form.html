@@ -8,11 +8,9 @@
   </head>
 
   <body>
-    <form method="post">
+    <form >
       <fieldset>
-        <legend>Donor Information</legend>
-        <span class="star"><h1>Donor Information</h1></span>
-
+        <h3>Donar Information</h3>   
         <table>
           <tr>
             <td class="label">First Name <span class="star">*</span></td>
@@ -88,7 +86,7 @@
 
           <!-- Donation Amount Proper Alignment -->
           <tr>
-            <td class="label">
+            <td class="labeltop">
               Donation Amount <span class="star">*</span>
               <br />
               <span class="note">(Check a button or type your amount)</span>
@@ -102,7 +100,7 @@
               <input type="radio" name="amount" value="250" /> $250
               <input type="radio" name="amount" value="other" /> Other
               <br /><br />
-              Other Amount $<input
+              <strong>Other Amount $ :</strong><input
                 type="text"
                 name="otherAmount"
                 class="small-input"
@@ -111,20 +109,19 @@
           </tr>
 
           <tr>
-            <td class="label">
+            <td class="labeltop">
               Recurring Donation
               <br />
               <span class="note">(Check if yes)</span>
             </td>
 
             <td>
-              <input type="checkbox" name="recurring" />I am interested in
-              giving on a regular basis.
+              <input type="checkbox" name="recurring" />I am interested in giving on a regular basis.
 
               <br /><br />
 
-              Monthly Credit Card $
-              <input type="number" name="monthly" class="small-input" />For
+              <strong>Monthly Credit Card $ : </strong>
+              <input type="number" name="monthly" class="small-input" /> For
               <input type="number" name="months" class="small-input" /> Months
             </td>
           </tr>
@@ -136,6 +133,45 @@
               <input type="reset" value="Reset" />
             </td>
           </tr>
+        </table>
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <h3>Honorium and Memorial Donation Information  </h3>
+        <table>
+          <tr>
+            <td>I would like to make this donation</td>
+            <td >
+              <input type="radio" name="donationType" value="honorium" /> To
+              Honorium
+              <input type="radio" name="donationType" value="memorial" /> In
+              Memorial
+          </tr>
+          <tr>
+            <td class="label">Name</td>
+            <td><input type="text" name="honoreeName" /></td>
+          </tr>
+          <tr>
+            <td class="label"> Acknowledge Donation to</td>
+            <td><input type="text" name="acknowledgeTo" /></td>
+          </tr>
+            <tr>
+              <td class="label">Address</td>
+              <td><input type="text" name="address" /></td>
+            </tr>
+            <tr>
+              <td class="label">City</td>
+              <td><input type="text" name="city" /></td>
+            </tr>
+            <tr>
+              <td class="label">State</td>
+              <td><input type="text" name="state" /></td>
+            </tr>
+            <tr>
+              <td class="label">Zip Code</td>
+              <td><input type="text" name="zip" /></td>
+            </tr>
         </table>
       </fieldset>
     </form>

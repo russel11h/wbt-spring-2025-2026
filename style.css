@@ -1,81 +1,96 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: lightblue;
-  font-family: Arial;
-  margin: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
-h1 {
-  color: darkblue;
-  text-align: center;
+nav {
+  background-color: #333;
+  padding: 10px;
 }
 
-h2 {
-  color: navy;
-  text-align: left;
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
-p {
-  color: black;
+nav ul li {
+  margin-right: 20px;
+  margin-bottom: 10px; 
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
   font-size: 16px;
 }
 
-a {
-  color: blue;
-}
-
-a:hover {
-  color: red;
+nav a:hover {
+  color: #f4a261;
 }
 
 img {
-  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  max-width: 100%; 
+  height: auto;
 }
 
-table {
-  border: 1px solid black;
-  margin: 10px;
-}
 
-td {
-  padding: 5px;
-}
-
-input {
-  margin: 5px;
-}
-
-ul {
-  color: darkgreen;
-}
-
-hr {
-  border: 1px solid gray;
-}
-
-.nav {
-  background-color: lightgray;
-  padding: 10px;
+h1 p {
+  font-size: 36px;
+  color: #333;
   text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px; 
 }
 
-.nav a {
-  margin: 10px;
-}
-
-.header {
-  background-color: yellow;
+footer {
+  background-color: #333;
+  color: white;
   padding: 20px;
+  margin-top: 40px;
   text-align: center;
+  border-radius: 8px;
+  font-size: 12px;
+  
 }
 
-.content {
-  background-color: white;
-  padding: 15px;
+footer p {
   margin: 10px;
+  font-size: 14px;
 }
 
-.footer {
-  background-color: lightgray;
+footer a {
+  color: #f4a261;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer strong {
+  font-weight: bold;
+}
+
+
+/* Flexbox layout adjustments for header and footer on small screens */
+h1 p, footer {
   text-align: center;
-  padding: 10px;
+  font-size: 4vw;
 }

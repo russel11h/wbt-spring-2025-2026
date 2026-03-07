@@ -12,7 +12,6 @@ body {
   margin: 0;
 }
 
-/* Navigation Styling */
 nav {
   background-color: #333;
   padding: 10px;
@@ -22,7 +21,7 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap; /* Prevent wrapping */
+  flex-wrap: nowrap; 
   margin: 0;
 }
 

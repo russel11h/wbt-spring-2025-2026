@@ -1,0 +1,366 @@
+/* This CSS file designs the top header, left category list, and black footer. */
+/* Search is kept only once at the top and category items look like text-box rows. */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #08766d;
+    white-space: nowrap;
+}
+
+.brand img {
+    width: 52px;
+    height: 52px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.brand span {
+    color: #08766d;
+}
+
+.top-search {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 640px;
+    border: 1px solid #d8e3e1;
+    border-radius: 7px;
+    overflow: hidden;
+    background: #eaf4f2;
+    margin-left: auto;
+}
+
+.top-search input {
+    height: 100%;
+    border: 0;
+    background: #eaf4f2;
+    outline: 0;
+    flex: 1;
+    padding: 0 16px;
+    font-size: 16px;
+}
+
+.top-search .search-btn {
+    width: 64px;
+    height: 100%;
+    border: 0;
+    background: #08766d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.top-search .search-btn img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.top-search .search-btn:hover {
+    background: #075f58;
+}
+
+.top-menu {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.top-menu a,
+.login-btn,
+.register-btn,
+.logout-btn,
+.profile-link,
+.cart-top {
+    padding: 9px 11px;
+    border-radius: 6px;
+    color: #223b38;
+    font-weight: bold;
+    background: #f0f5f4;
+    white-space: nowrap;
+}
+
+.top-menu a:hover,
+.top-menu a.active,
+.profile-link.active,
+.cart-top.active {
+    background: #08766d;
+    color: white;
+}
+
+.nav-account {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #fff2e6;
+}
+
+.cart-top img {
+    width: 26px;
+    height: 26px;
+}
+
+.cart-top span {
+    background: #e64646;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 12px;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.profile-link img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f2f2f2;
+}
+
+.logout-btn {
+    background: #ffecec;
+    color: #b00000;
+}
+
+.register-btn {
+    background: #08766d;
+    color: white;
+}
+
+.login-btn {
+    background: #e9f5f1;
+    color: #08766d;
+}
+
+.page-body {
+    display: flex;
+    align-items: flex-start;
+    min-height: 70vh;
+}
+
+.left-category {
+    width: 265px;
+    min-height: 70vh;
+    background: #fff;
+    border-right: 1px solid #e0e0e0;
+    position: sticky;
+    top: 73px;
+}
+
+.category-box {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #e7e7e7;
+}
+
+.category-row {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 14px;
+    border-bottom: 1px solid #e7e7e7;
+    color: #001a30;
+    font-size: 17px;
+    font-weight: bold;
+    background: #fff;
+}
+
+.category-row:hover,
+.category-row.active {
+    background: #eaf4f2;
+    color: #08766d;
+}
+
+.category-row .cat-img {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #fff;
+    flex: 0 0 auto;
+}
+
+.category-row .cat-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-row span:nth-child(2) {
+    flex: 1;
+}
+
+.category-row b {
+    font-size: 30px;
+    color: #9a9a9a;
+    font-weight: normal;
+}
+
+.admin-cat {
+    background: #f4fffb;
+}
+
+.container {
+    flex: 1;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.footer-panel {
+    background: #030913;
+    color: white;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1.1fr;
+    gap: 35px;
+    padding: 45px 55px;
+    margin-top: 20px;
+}
+
+.footer-panel h3 {
+    margin: 0 0 16px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.footer-panel p {
+    line-height: 1.6;
+    color: #f0f0f0;
+    font-size: 16px;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 75px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: white;
+    padding: 8px;
+    margin-bottom: 14px;
+}
+
+.footer-col a,
+.footer-col p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    margin: 12px 0;
+}
+
+.footer-col img:not(.footer-logo) {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.center-footer a {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.contact-line {
+    align-items: flex-start !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .topbar {
+        flex-wrap: wrap;
+    }
+
+    .top-search {
+        order: 2;
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+
+    .page-body {
+        display: block;
+    }
+
+    .left-category {
+        position: static;
+        width: auto;
+        min-height: auto;
+        overflow: auto;
+    }
+
+    .category-box {
+        display: flex;
+        overflow: auto;
+    }
+
+    .category-row {
+        min-width: 190px;
+        border-right: 1px solid #e7e7e7;
+    }
+
+    .footer-panel {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .top-menu,
+    .nav-account {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        padding: 14px;
+    }
+
+    .brand span {
+        display: none;
+    }
+
+    .footer-panel {
+        padding: 28px 20px;
+    }
+
+    .category-row {
+        height: 54px;
+        font-size: 15px;
+    }
+
+    .top-search {
+        height: 45px;
+    }
+}

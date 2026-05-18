@@ -1,0 +1,175 @@
+/* This CSS file keeps common font, buttons, forms, cards and tables. */
+/* Other page CSS files add page-specific design separately. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7fbfa;
+    color: #243b36;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbdad6;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    border-radius: 7px;
+    background: #0b5d4a;
+    color: white;
+    padding: 11px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #063d31;
+}
+
+.btn.light {
+    background: #eaf3f0;
+    color: #0b5d4a;
+}
+
+.small-btn {
+    display: inline-block;
+    background: #0b5d4a;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 6px;
+    margin: 2px;
+    font-size: 13px;
+}
+
+.small-btn.danger {
+    background: #c22727;
+}
+
+.card {
+    background: white;
+    border: 1px solid #dce7e4;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.05);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.form-grid.two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.alert.error {
+    background: #ffecec;
+    color: #a40000;
+    border: 1px solid #ffcaca;
+}
+
+.alert.success {
+    background: #e9fff4;
+    color: #0b5d4a;
+    border: 1px solid #bdebd0;
+}
+
+.page-title-box {
+    padding: 8px 0 18px;
+}
+
+.page-title-box h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #0b5d4a;
+}
+
+.page-title-box p {
+    margin: 6px 0 0;
+    color: #62756f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 11px;
+    border-bottom: 1px solid #e1ebe8;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background: #0b5d4a;
+    color: white;
+}
+
+.table-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.empty {
+    text-align: center;
+    color: #677b76;
+    padding: 25px;
+}
+
+.full {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+    .form-grid,
+    .form-grid.two {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow: auto;
+    }
+}

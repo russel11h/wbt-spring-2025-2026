@@ -1,0 +1,72 @@
+/* This CSS file designs cart, checkout, invoice and customer order pages. */
+/* Payment radio buttons are aligned and highlighted when selected. */
+
+.qty-box {
+    width: 85px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-card,
+.invoice-card,
+.order-card {
+    max-width: 1000px;
+}
+
+.invoice-total {
+    color: #065f50;
+    text-align: right;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 12px 0 18px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 14px;
+    border: 2px solid #dcebe7;
+    border-radius: 16px;
+    background: #f9fffd;
+    cursor: pointer;
+}
+
+.payment-option input {
+    width: auto;
+}
+
+.payment-option:has(input:checked) {
+    border-color: #065f50;
+    background: #dff7ef;
+    color: #065f50;
+    box-shadow: 0 8px 20px rgba(6, 95, 80, 0.15);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-total {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,140 @@
+/* This CSS file designs only the profile page. */
+/* It keeps the image, form fields and password section properly aligned. */
+
+.profile-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 26px;
+    align-items: start;
+    background: #fff;
+    border-radius: 30px;
+    padding: 26px;
+    box-shadow: 0 16px 36px rgba(13, 69, 58, 0.10);
+    border: 1px solid #dcebe7;
+}
+
+.profile-photo-box {
+    text-align: center;
+    background: linear-gradient(180deg, #ecfaf5, #f8fffd);
+    border-radius: 26px;
+    padding: 28px 22px;
+    border: 1px solid #d8eee8;
+    position: sticky;
+    top: 105px;
+}
+
+.profile-photo-box img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.profile-photo-box h3 {
+    margin: 8px 0 4px;
+    color: #065f50;
+    font-size: 22px;
+}
+
+.profile-photo-box p {
+    margin: 0 0 12px;
+    color: #58716b;
+    font-weight: 700;
+}
+
+.photo-help {
+    display: block;
+    font-size: 13px;
+    color: #6d817d;
+    background: #fff;
+    border: 1px dashed #b7d9d0;
+    border-radius: 14px;
+    padding: 10px;
+    line-height: 1.4;
+}
+
+.profile-form {
+    width: 100%;
+    display: block;
+}
+
+.profile-form .form-grid {
+    align-items: start;
+}
+
+.form-group {
+    min-width: 0;
+}
+
+.full-row {
+    margin-top: 16px;
+}
+
+.profile-form input,
+.profile-form textarea {
+    min-height: 48px;
+}
+
+.profile-form input[type="file"] {
+    padding: 10px;
+    background: #f8fffd;
+    cursor: pointer;
+}
+
+.password-box {
+    margin-top: 18px;
+    padding: 18px;
+    border-radius: 22px;
+    background: #f6fbfa;
+    border: 1px solid #dcebe7;
+}
+
+.password-box h3 {
+    margin: 0;
+    color: #065f50;
+}
+
+.password-box p {
+    margin: 6px 0 14px;
+    color: #6d817d;
+}
+
+.profile-submit {
+    margin-top: 18px;
+    min-width: 180px;
+}
+
+.profile-form label {
+    color: #20312f;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .profile-card {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photo-box {
+        position: static;
+    }
+
+    .profile-submit {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .profile-card {
+        padding: 18px;
+        border-radius: 22px;
+    }
+
+    .profile-photo-box img {
+        width: 135px;
+        height: 135px;
+    }
+}

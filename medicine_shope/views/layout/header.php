@@ -54,6 +54,7 @@ $selectedCategory = intval($_GET['category'] ?? 0);
     <nav class="top-menu">
         <?php if($authUser && ($authUser['role'] ?? '')==='admin'): ?>
             <a class="<?= activeMenu('admin',$currentPage) ?>" href="index.php?page=admin">Dashboard</a>
+            <a class="<?= activeMenu('categories',$currentPage) ?>" href="index.php?page=categories">Categories</a>
             <a class="<?= activeMenu('medicines',$currentPage) ?>" href="index.php?page=medicines">Medicines</a>
             <a class="<?= activeMenu('customers',$currentPage) ?>" href="index.php?page=customers">Customers</a>
             <a class="<?= activeMenu('orders',$currentPage) ?>" href="index.php?page=orders">Orders</a>
@@ -89,19 +90,17 @@ $selectedCategory = intval($_GET['category'] ?? 0);
                 <b>›</b>
             </a>
             <?php foreach($layoutCategories as $cat): ?>
+                <?php
+                    $catImage = (!empty($cat['image_path']) && file_exists($cat['image_path']))
+                        ? $cat['image_path']
+                        : 'asset/medicine-default.png';
+                ?>
                 <a class="category-row <?= $selectedCategory==intval($cat['id'])?'active':'' ?>" href="index.php?page=home&category=<?= $cat['id'] ?>&q=<?= urlencode($_GET['q'] ?? '') ?>">
-                    <span class="cat-img"><img src="asset/medicineshopelogo.jpg" alt="Category"></span>
+                    <span class="cat-img"><img src="<?= htmlspecialchars($catImage) ?>" alt="Category"></span>
                     <span><?= htmlspecialchars($cat['name']) ?></span>
                     <b>›</b>
                 </a>
             <?php endforeach; ?>
-            <?php if($authUser && ($authUser['role'] ?? '')==='admin'): ?>
-                <a class="category-row admin-cat <?= activeMenu('categories',$currentPage) ?>" href="index.php?page=categories">
-                    <span class="cat-img"><img src="asset/medicineshopelogo.jpg" alt="Manage"></span>
-                    <span>Manage Category</span>
-                    <b>›</b>
-                </a>
-            <?php endif; ?>
         </div>
     </aside>
     <main class="container">

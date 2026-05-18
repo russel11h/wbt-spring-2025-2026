@@ -26,6 +26,7 @@ CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(120) NOT NULL,
     category_type ENUM('liquid','solid') NOT NULL,
+    image_path VARCHAR(255) NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
@@ -88,11 +89,11 @@ INSERT INTO users(name,email,password_hash,role,address,phone,profile_picture) V
 ('Administrator','admin@shop.com','$2y$12$q//DhiQxP38ycjEI2Hc21.rnMabQ1oBpp0wGLr2izqycJysxAu8bm','admin','Dhaka, Bangladesh','01700000000','asset/Profile.png'),
 ('Demo Customer','customer@shop.com','$2y$12$q//DhiQxP38ycjEI2Hc21.rnMabQ1oBpp0wGLr2izqycJysxAu8bm','customer','Mirzapur, Tangail','01800000000','asset/Profile.png');
 
-INSERT INTO categories(name, category_type) VALUES
-('Paracetamol Genre','solid'),
-('Aspirin Genre','solid'),
-('Cough Syrup Genre','liquid'),
-('Antacid Genre','liquid');
+INSERT INTO categories(name, category_type, image_path) VALUES
+('Paracetamol Genre','solid','asset/medicine-default.png'),
+('Aspirin Genre','solid','asset/medicine-default.png'),
+('Cough Syrup Genre','liquid','asset/medicine-default.png'),
+('Antacid Genre','liquid','asset/medicine-default.png');
 
 INSERT INTO medicines(name, category_id, vendor_name, price, availability, description) VALUES
 ('Napa 500mg',1,'Beximco Pharma',2.00,200,'Common fever and pain medicine'),
